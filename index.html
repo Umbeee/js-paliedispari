@@ -11,14 +11,33 @@
 <body>
     
     <!-- <form action=""> -->
-        <div class="container my-3">
+        <div class="container my-3 bg-white p-4 rounded">
             <h3>Verifica che la tua parola sia palindroma</h3>
-            <input type="text" id="inputParola">
-            <button onclick="parola()" class="btn btn-danger">invia</button>
+            <div class="d-flex gap-3 my-3">
+                
+                <input type="text" id="inputParola">
+                <button onclick="parola()" class="btn btn-danger">invia</button>
         
+                
+            </div>
             <div id="stampaParola">
 
             </div>
+
+            <h3>Inserisci un numero e scegli pari o dispari!</h3>
+            <div class="d-flex gap-3">
+                <input type="number" id="inputNumero" min="1" max="5" step="1" placeholder="1-5">
+                <select class="form-select" aria-label="Default select example" id="pariDispari">
+                    <option value="" disabled selected>Pari o dispari?</option>
+                    <option value="pari">Pari</option>
+                    <option value="dispari">Dispari</option>
+                </select>
+                <button onclick="numero()" class="btn btn-danger">invia</button>
+                 
+            </div>
+            <div id="stampaNumero">
+
+            </div> 
         </div>
     <!-- </form> -->
 
