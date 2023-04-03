@@ -1,0 +1,12 @@
+.form-select{
+    flex-basis: 25%;
+}
+
+span{
+    font-weight: bold;
+    color: red;
+}
+
+body{
+    background-color: rgb(104,107,115);
+}
